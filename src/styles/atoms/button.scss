@@ -24,8 +24,13 @@
 }
 
 .white{
-    background: transparent;
+    background: white;
     color: rgb(4, 4, 5);
     border: 1px solid rgba(4, 4, 5, 0.1);
+}
 
+.dark{
+  background-color: #353935;
+  color: white;
+  border:none;
 }

@@ -1,0 +1,103 @@
+.footer {
+  background-color: #28282B;
+
+  .community_section {
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(229, 232, 235, 0.25);
+
+    .signup_section {
+      padding-right: 64px;
+      padding-top: 40px;
+
+      h4 {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        margin-top: 8px;
+      }
+      p {
+        font-size: 16px;
+        color: rgb(251, 253, 255);
+      }
+
+      .sign_form {
+        display: flex;
+        align-items: center;
+
+        .input_container {
+          display: flex;
+          background-color: rgb(255, 255, 255);
+          border-radius: 10px;
+          border: 1px solid rgb(229, 232, 235);
+          padding: 12px;
+          width: 100%;
+          input {
+            border: none;
+          }
+        }
+        button {
+          display: inline-flex;
+          flex-direction: row;
+          -webkit-box-align: center;
+          align-items: center;
+          border-radius: 10px;
+          -webkit-box-pack: center;
+          justify-content: center;
+          font-size: 16px;
+          font-weight: 600;
+          padding: 12px 20px;
+          background-color: #353935;
+          border: 1px solid #353935;
+          color: rgb(255, 255, 255);
+          margin: 8px;
+          height: 50px;
+          width: 162px;
+        }
+      }
+    }
+  }
+  .social_section {
+    padding-top: 40px;
+    padding-left: 64px;
+
+    h4{
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+
+    .social_container {
+      display: flex;
+      align-items: center;
+    //   justify-content: center;
+
+      .social_icon {
+        cursor: pointer;
+        margin-right: 12px;
+        width: 54px;
+        height: 54px;
+        margin-top: 8px;
+        display: inline-flex;
+        flex-direction: row;
+        -webkit-box-align: center;
+        align-items: center;
+        border-radius: 10px;
+        -webkit-box-pack: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 12px 20px;
+        background-color: #353935;
+        border: 1px solid #353935;
+        color: rgb(255, 255, 255);
+
+        
+      }
+    }
+  }
+}
