@@ -22,6 +22,8 @@
       "@styles": ["src/styles"],
       "@molecules": ["src/molecules"],
       "@molecules/*": ["src/molecules/*"],
+      "@atoms": ["src/atoms"],
+      "@atoms/*": ["src/atoms/*"],
       "@helpers": ["src/helpers"],
       "@helpers/*": ["src/helpers/*"],
       "@interfaces": ["src/interfaces"],

@@ -1,0 +1,31 @@
+.button {
+  height: 40px;
+  outline: none;
+  font-size: 13px;
+  font-weight: 900;
+  padding: 0 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  margin-right: 10px;
+
+}
+
+.colorfull {
+    color: white;
+    background: linear-gradient(
+      to right,
+      rgb(255, 0, 184) 0%,
+      rgb(100, 161, 255) 50%,
+      rgb(0, 102, 255) 100%
+    );
+    border: none;
+}
+
+.white{
+    background: transparent;
+    color: rgb(4, 4, 5);
+    border: 1px solid rgba(4, 4, 5, 0.1);
+
+}

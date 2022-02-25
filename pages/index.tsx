@@ -5,11 +5,12 @@ import Link from 'next/link';
 const Home: NextPage = () => {
   return (
     <div>
-      <h2>hello next</h2>
+      <h1>Marketplace</h1>
       <Link href="/marketplace">
       <button>Market Place</button>
-      
       </Link>
+      <i className="fas fa-search"></i>
+      <i className="fa fa-car"></i>
     </div>
   )
 }
