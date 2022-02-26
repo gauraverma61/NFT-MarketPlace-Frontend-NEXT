@@ -1,7 +1,7 @@
 import React from "react";
 import MainIcon from "@atoms/MainIcon";
-// import MetaMaskIcon from "../../public/assets/icons/metamask.svg";
 import MetaMaskIcon from "@assets/icons/metamask.svg";
+import WalletConnectIcon from "@assets/icons/walletconnect.webp";
 import Image from "next/image";
 
 interface walletbuttonIprops {
@@ -25,7 +25,7 @@ const SignIn = () => {
       <div className="row h-100">
         <div className="col-12 col-md-4 left h-100 d-flex align-items-center justify-content-center flex-column">
           <MainIcon size="big" />
-          <h2>Sassible</h2>
+          <h2>Sasible</h2>
         </div>
         <div className="col-12 col-md-8 right h-100">
           <h2>Sign in</h2>
@@ -34,6 +34,7 @@ const SignIn = () => {
             <span>What is a wallet?</span>
           </p>
           <WalletButton text="Sign in with Metamask" icon={MetaMaskIcon} />
+          <WalletButton text="Sign in with Wallet Connect" icon={WalletConnectIcon} />
         </div>
       </div>
     </div>
