@@ -6,7 +6,7 @@ import Image from "next/image";
 
 interface walletbuttonIprops {
   text: string;
-  icon: string;
+  icon: any;
 }
 
 const WalletButton = (props: walletbuttonIprops) => {
