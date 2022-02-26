@@ -1,0 +1,46 @@
+.signin{
+    height: 90vh;
+    .left{
+        background-color: #28282B;
+        h2{
+            font-weight: 700;
+            font-size: 40px;
+            color: white;  
+            margin: 30px 0;
+        }
+    }
+    .right{
+        padding: 40px 100px;
+        h2{
+            font-weight: 700;
+            font-size: 40px;
+        }
+        p{
+            font-family: inherit;
+            font-weight: inherit;
+            font-size: 18px;
+            color: rgb(110, 110, 110);
+            max-width: 360px; 
+            margin: 30px 0;
+            span{
+                color: rgb(0, 102, 255);
+            }
+        }
+    }
+
+}
+
+.wallet_button{
+    padding: 15px 25px;
+    border-radius: 40px;
+    background-color: #28282B;
+    max-width: 350px;
+
+    .button_text{
+        color: white;
+        font-weight: 700;
+        margin: 0 auto;
+    }
+}
+
+    

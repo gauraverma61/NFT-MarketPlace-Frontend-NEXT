@@ -7,8 +7,8 @@ import SiteLayout from "./SiteLayout";
 
 const Providers: React.FC = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false);
-  Router.events.on("routeChangeStart", () => setIsLoading(true));
   useEffect(() => {
+    Router.events.on("routeChangeStart", () => setIsLoading(true));
     Router.events.on("routeChangeComplete", () => setIsLoading(false));
   });
   return (

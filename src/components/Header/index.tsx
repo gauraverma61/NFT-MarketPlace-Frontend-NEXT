@@ -3,8 +3,13 @@ import React from "react";
 import MainIcon from "@atoms/MainIcon";
 import Button from "@atoms/Button";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Header = () => {
+  const router = useRouter();
+
+  const routrPushHandler = (path:string)=> router.push(`/${path}`)
+
   return (
     <div className="header d-flex justify-content-between align-items-center px-4">
       <Link href="/">
@@ -39,7 +44,7 @@ const Header = () => {
       </div>
       <div className="right_container">
         <Button text={"Create"} variant={"dark"} />
-        <Button text={"Sign in"} variant={"white"} />
+        <Button path={'signin'} text={"Sign in"} variant={"white"} />
       </div>
     </div>
   );
