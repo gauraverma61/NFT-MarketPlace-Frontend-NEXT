@@ -4,18 +4,20 @@ import { useRouter } from "next/router";
 interface IProps {
   text: string;
   variant: string;
-  path?: any;
+  clickHandler?: any;
 }
 
 const Button: React.FC<IProps> = (props: IProps) => {
-  const { text, variant, path } = props;
+  const { text, variant, clickHandler } = props;
   const router = useRouter();
-  const routrPushHandler = (path: string) => router.push(`/${path}`);
+  const routrPushHandler = (path: string) => {
+    if (path) {
+      router.push(`/${path}`);
+    }
+  };
   return (
     <button
-      onClick={() => {
-        routrPushHandler(path);
-      }}
+      onClick={clickHandler}
       className={`button ${variant}`}
     >
       {text}

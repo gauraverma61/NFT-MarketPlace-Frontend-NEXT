@@ -4,11 +4,18 @@ import MainIcon from "@atoms/MainIcon";
 import Button from "@atoms/Button";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import useAuth from "src/hooks/useAuth";
+import { is } from "immer/dist/internal";
 
 const Header = () => {
   const router = useRouter();
+  const { isLoggedIn, account, disconnect } = useAuth();
 
-  const routrPushHandler = (path:string)=> router.push(`/${path}`)
+  const routerSigninPush = () => {
+    router.push("/signin");
+  };
+
+  const routrPushHandler = (path: string) => router.push(`/${path}`);
 
   return (
     <div className="header d-flex justify-content-between align-items-center px-4">
@@ -44,7 +51,19 @@ const Header = () => {
       </div>
       <div className="right_container">
         <Button text={"Create"} variant={"dark"} />
-        <Button path={'signin'} text={"Sign in"} variant={"white"} />
+        {!isLoggedIn ? (
+          <Button
+            clickHandler={routerSigninPush}
+            text={"Sign in"}
+            variant={"white"}
+          />
+        ) : (
+          <Button
+            clickHandler={disconnect}
+            text={"Log out"}
+            variant={"white"}
+          />
+        )}
       </div>
     </div>
   );
