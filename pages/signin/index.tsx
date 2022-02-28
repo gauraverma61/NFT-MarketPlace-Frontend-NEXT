@@ -24,7 +24,7 @@ const WalletButton = (props: walletbuttonIprops) => {
 
 const SignIn = () => {
   const {connect, disconnect, chainId, isLoggedIn, account} = useAuth();
-  console.log("account",account)
+  // console.log("account",account)
   return (
     <div className="signin w-100 container-fluid">
       <div className="row h-100">

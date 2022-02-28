@@ -5,17 +5,24 @@ import Button from "@atoms/Button";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import useAuth from "src/hooks/useAuth";
-import { is } from "immer/dist/internal";
+import { useAppDispatch } from "@redux/store";
+import { login, logout } from "@redux/actions";
+
 
 const Header = () => {
   const router = useRouter();
+  const dispatch = useAppDispatch();
   const { isLoggedIn, account, disconnect } = useAuth();
 
   const routerSigninPush = () => {
     router.push("/signin");
   };
 
-  const routrPushHandler = (path: string) => router.push(`/${path}`);
+  const logOutHandler = async()=>{
+    dispatch(logout());
+    await disconnect();
+  }
+
 
   return (
     <div className="header d-flex justify-content-between align-items-center px-4">
@@ -59,7 +66,7 @@ const Header = () => {
           />
         ) : (
           <Button
-            clickHandler={disconnect}
+            clickHandler={logOutHandler}
             text={"Log out"}
             variant={"white"}
           />

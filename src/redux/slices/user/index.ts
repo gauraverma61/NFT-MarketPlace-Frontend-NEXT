@@ -19,13 +19,13 @@ const userSlice = createSlice({
         setCustomer: (state, {payload})=>{
             state.customer = payload;
         },
-        logout: (state, payload)=> {
-            state.customer = undefined;
+        logout: (state) => {
             state.address = undefined;
+            state.customer = undefined;
         }
     }
 })
 
-export const { login, setCustomer, logout} = userSlice.actions;
+export const { login, setCustomer, logout } = userSlice.actions;
 
 export default userSlice.reducer; 
