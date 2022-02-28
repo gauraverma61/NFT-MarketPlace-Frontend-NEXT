@@ -35,15 +35,16 @@ const useAuth = () => {
     router.push("/");
   };
 
-  useEffect(() => {
-    if (active) {
-      dispatch(login(account?.toLowerCase()));
-    }
-  }, [active]);
+  // useEffect(() => {
+  //   if (active) {
+  //     dispatch(login(account?.toLowerCase()));
+  //   }
+  // }, [active]);
 
   async function connect() {
     await deactivate();
     await activate(connectorsByName[ConnectorNames.Injected]);
+    dispatch(login(account?.toLowerCase()))
     pushToHome();
   }
 
