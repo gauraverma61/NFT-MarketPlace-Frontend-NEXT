@@ -54,7 +54,7 @@ const Section1: React.FC = () => {
               Discover, collect, and sell extraordinary NFTs
             </h1>
             <p className="subheading">
-              Sasible is the world's first and largest NFT marketplace
+              Sasible is the worlds first and largest NFT marketplace
             </p>
             <div className="button_section d-flex align-items-center mt-5">
               <Button text="Explore" variant="big_blackborder" />
