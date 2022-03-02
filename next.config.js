@@ -4,3 +4,9 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+
+module.exports = {
+  images: {
+    domains: ['pinkvilla.com','sportshub.cbsistatic.com'],
+  },
+}

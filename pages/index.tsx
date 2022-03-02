@@ -1,12 +1,13 @@
 import type { NextPage } from 'next'
 import Link from 'next/link';
+import HomePage from '@components/Home';
 
 
 const Home: NextPage = () => {
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <>
+      <HomePage/>
+    </>
   )
 }
 

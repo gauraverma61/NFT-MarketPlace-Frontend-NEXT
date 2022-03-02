@@ -1,0 +1,70 @@
+.background_container {
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  height: max-content;
+
+  .blur_background {
+    background-size: cover;
+    background-color: white;
+    background-position: center center;
+    opacity: 0.5;
+    filter: blur(1px);
+    -webkit-mask: linear-gradient(white, transparent);
+    height: 550px;
+  }
+}
+.section1 {
+
+  .left_intro {
+    padding: 110px 20px 44px 30px;
+    z-index: 9;
+
+    .section1_heading {
+      font-size: 45px;
+      font-weight: 600;
+    }
+    .subheading {
+      font-size: 24px;
+      max-width: 400px;
+      margin-top: 20px;
+    }
+  }
+  .right_intro {
+    z-index: 9;
+  }
+}
+
+.bignft_card {
+  width: 100%;
+  z-index: 2;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: rgb(4 17 29 / 25%) 0px 0px 10px 0px;
+
+  .nft_image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+  }
+
+  .profile_section {
+    .owner_image {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 0 15px;
+    }
+    .nft_name {
+      font-weight: 600;
+      font-size: 14px;
+      color: rgb(4, 17, 29);
+    }
+    .owner_name {
+      color: rgb(32, 129, 226);
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+}
