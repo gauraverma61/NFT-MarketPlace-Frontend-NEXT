@@ -1,0 +1,82 @@
+.section3 {
+  .heading {
+    .section3_title {
+      .heading_text {
+        font-weight: 600;
+        font-size: 24px;
+        color: rgb(4, 17, 29);
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.collection_card {
+  font-weight: 600;
+  color: rgb(53, 56, 64);
+  text-align: left;
+  height: 88px;
+
+  .slip {
+    margin-right: 40px;
+    padding: 16px;
+    border: 1px solid rgb(229, 232, 235);
+    &:hover {
+      transition: all 0.2s ease 0s;
+      box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+      background-color: rgb(251, 253, 255);
+    }
+  }
+  .index {
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(4, 17, 29);
+  }
+
+  .image_container {
+    margin: 0 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+  .intro {
+    margin-right: 16px;
+    .name {
+      font-weight: 600;
+      font-size: 14px;
+      color: rgb(4, 17, 29);
+    }
+    .floor_price {
+      font-weight: 500;
+      font-size: 12px;
+      color: rgb(112, 122, 131);
+      .coin_image{
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+
+  .number_info {
+    .percentage {
+      font-weight: 400;
+      font-size: 14px;
+    }
+    .networth {
+      .coin_image {
+        width: 14px;
+        height: 14px;
+      }
+      .worth {
+        font-weight: 600;
+        font-size: 14px;
+        color: rgb(138, 147, 155);
+      }
+    }
+  }
+}

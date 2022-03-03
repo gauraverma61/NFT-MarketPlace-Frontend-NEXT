@@ -1,0 +1,27 @@
+// Bootstrap-Dropdown
+.dropdown {
+  #dropdown-basic {
+    font-weight: 600;
+    font-size: 24px;
+    color: rgb(32, 129, 226);
+    background: none;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    &:focus{
+        box-shadow: none;
+    }
+  }
+
+  .dropdown-menu{
+      min-width: 15rem;
+  }
+
+  .dropdown-item {
+      padding: 16px;
+      text-align: left;
+      font-weight: 600;
+
+  }
+}
