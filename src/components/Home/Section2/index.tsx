@@ -89,8 +89,8 @@ const Section2: React.FC = () => {
     <h2>Notable Drops</h2>
       <Slider {...settings}>
         {dummyData.map((nft, index)=>{
-            return <div className="p-2">
-                <LongCard key={index} {...nft} />
+            return <div key={index} className="p-2">
+                <LongCard {...nft} />
             </div>
         })}
       </Slider>
