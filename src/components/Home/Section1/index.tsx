@@ -47,9 +47,9 @@ const Section1: React.FC = () => {
           className="blur_background"
         ></div>
       </div>
-      <div className="section1 container-xxl px-5">
+      <div className="section1 container-xxl px-2 px-md-4 px-lg-5">
         <div className="row">
-          <div className="col-12 col-md-7 left_intro">
+          <div className="col-12 col-md-7 px left_intro px-3 px-md-4 px-lg-5">
             <h1 className="section1_heading">
               Discover, collect, and sell extraordinary NFTs
             </h1>
@@ -61,7 +61,7 @@ const Section1: React.FC = () => {
               <Button text="Create" variant="big_blackborder" />
             </div>
           </div>
-          <div className=" right_intro col-12 col-md-5 p-5">
+          <div className=" right_intro col-12 col-md-5 p-3 p-md-4 p-lg-5">
             <BigNftCard {...dummyCardData} />
           </div>
         </div>

@@ -68,7 +68,7 @@ const Section2: React.FC = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 769,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,

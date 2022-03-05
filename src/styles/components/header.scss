@@ -3,6 +3,13 @@
     height: 75px;
     background-color: #28282B;
 
+    .bigsearch_container{
+        position: fixed;
+        height: 100vh;
+        background-color: #28282B ;
+        z-index: 200;
+    }
+
     .heading_container{
         display: flex;
         align-items: center;
@@ -38,4 +45,16 @@
         align-items: center;
     }
 
+}
+
+.bigsearch_container{
+    position: fixed;
+    flex: 1;
+    background-color: #28282B ;
+    z-index: 200;
+    min-height: 100%;
+
+    .bigsearchbar_container{
+
+    }
 }
