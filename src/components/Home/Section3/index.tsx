@@ -187,7 +187,7 @@ const Collectioncard = (props: IpropsCollectionCards) => {
 const Section3: React.FC = () => {
   const [dayLimit, setDayLimit] = useState("Last 7 days");
   return (
-    <div className="container-xxl section3 my-4 p-5">
+    <div className="container-xxl section3 my-4 px-2 px-md-4 px-lg-5">
       <div className="heading d-flex align-items-center justify-content-center my-4">
         <div className="section3_title d-flex align-items-center">
           <div className="heading_text ms">Top Collections Over</div>

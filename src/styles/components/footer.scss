@@ -11,6 +11,11 @@
       padding-right: 64px;
       padding-top: 40px;
 
+      @media screen and (max-width: "768px") {
+        padding-top: 40px;
+        padding-right: 20px;
+      }
+
       h4 {
         color: rgb(255, 255, 255);
         font-size: 20px;
@@ -35,9 +40,9 @@
           padding: 12px;
           width: 100%;
           input {
-            outline:none;
+            outline: none;
             border: none;
-            width:100%;
+            width: 100%;
           }
         }
         button {
@@ -65,6 +70,10 @@
       padding-top: 40px;
       padding-left: 64px;
 
+      @media screen and (max-width: "768px") {
+        padding-top: 40px;
+        padding-left: 20px;
+      }
       h4 {
         color: rgb(255, 255, 255);
         font-size: 20px;
@@ -76,6 +85,11 @@
       .social_container {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: "768px") {
+          justify-content: space-between;
+        }
         //   justify-content: center;
 
         .social_icon {
@@ -97,6 +111,10 @@
           background-color: #353935;
           border: 1px solid #353935;
           color: rgb(255, 255, 255);
+          @media screen and (max-width: "768px") {
+            width: 45px;
+            height: 45px;
+          }
         }
       }
     }
@@ -109,7 +127,10 @@
     .left_section {
       padding-top: 40px;
       flex-direction: column;
-      text-align: left;
+      align-items: flex-start;
+      @media screen and (max-width: "768px") {
+        align-items: center;
+      }
       h4 {
         color: rgb(255, 255, 255);
         font-size: 20px;
@@ -125,18 +146,21 @@
     .right_section {
       padding-top: 40px;
       padding-left: 72px;
+      @media screen and (max-width: "768px") {
+        padding-left: 20px;
+      }
     }
   }
 
-  .bottom_footer{
-    .left{
+  .bottom_footer {
+    .left {
       color: rgb(251, 253, 255);
       margin-top: 0px;
       font-size: 12px;
     }
-    .right{
-      ul{
-        div{
+    .right {
+      ul {
+        div {
           color: rgb(251, 253, 255);
           margin-top: 0px;
           font-size: 12px;

@@ -85,7 +85,7 @@ const Section2: React.FC = () => {
     ],
   };
   return (
-    <div className="section2 container-xxl px-5 py-5">
+    <div className="section2 container-xxl px-2 px-md-4 px-lg-5 py-5">
     <h2>Notable Drops</h2>
       <Slider {...settings}>
         {dummyData.map((nft, index)=>{

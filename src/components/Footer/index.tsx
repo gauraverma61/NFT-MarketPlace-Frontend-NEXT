@@ -41,7 +41,7 @@ const linksData = [
 const Linkbox = (props: any) => {
   const { title, data } = props;
   return (
-    <div className="link_box col-6 col-md-3">
+    <div className="link_box col-6 col-md-3 mb-2">
       <h5>{title}</h5>
       {data.map((link: any, index: any) => {
         return (

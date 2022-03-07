@@ -9,19 +9,41 @@
     border: none;
     outline: none;
     box-shadow: none;
-    &:focus{
-        box-shadow: none;
+    &:focus {
+      box-shadow: none;
     }
   }
 
-  .dropdown-menu{
-      min-width: 15rem;
+  .dropdown-menu {
+    min-width: 15rem;
   }
 
   .dropdown-item {
-      padding: 16px;
-      text-align: left;
-      font-weight: 600;
+    padding: 16px;
+    text-align: left;
+    font-weight: 600;
+  }
+}
 
+.nav-tabs {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: none !important;
+}
+
+.nav-link {
+  border: none !important;
+  color: white !important;
+  width: 100%;
+}
+
+.nav-link.active {
+  background: none !important;
+  color: white !important;
+  font-size: 14px;
+  border: none !important;
+
+  .tab_slide {
+    border-color: white;
   }
 }

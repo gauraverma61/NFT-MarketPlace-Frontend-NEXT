@@ -1,6 +1,8 @@
 import Button from "@atoms/Button";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const dummyCardData = {
   image:
@@ -37,6 +39,12 @@ const BigNftCard: React.FC<IpropsBigNftCard> = (props: IpropsBigNftCard) => {
 };
 
 const Section1: React.FC = () => {
+  const router = useRouter();
+
+  const pustToCreateHandler = ()=>{
+    router.push("/create");
+  }
+
   return (
     <>
       <div className="background_container">
@@ -58,7 +66,7 @@ const Section1: React.FC = () => {
             </p>
             <div className="button_section d-flex align-items-center mt-5">
               <Button text="Explore" variant="big_blackborder" />
-              <Button text="Create" variant="big_blackborder" />
+              <Button clickHandler={pustToCreateHandler} text="Create" variant="big_blackborder" />
             </div>
           </div>
           <div className=" right_intro col-12 col-md-5 p-3 p-md-4 p-lg-5">
