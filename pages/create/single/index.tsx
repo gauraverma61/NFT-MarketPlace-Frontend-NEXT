@@ -15,7 +15,7 @@ const TabSlide = (props: any) => {
   );
 };
 
-const singleCreate = () => {
+const SingleCreate:React.FC = () => {
   const [toPutOnMarketplace, setToPutOnMarketplace] = useState(false);
   const [isOpenUnlockContent, setIsOpenUnlockContent] = useState(false);
   const [isFreeMinting, setIsFreeMinting] = useState(false);
@@ -107,7 +107,7 @@ const singleCreate = () => {
                   <input type="text" placeholder="Enter minimum bid" />
                 </div>
                 <p className="rate_text">
-                  Bids below this amount won't be allowed.
+                  Bids below this amount wont be allowed.
                 </p>
               </Tab>
             </Tabs>
@@ -167,4 +167,4 @@ const singleCreate = () => {
   );
 };
 
-export default singleCreate;
+export default SingleCreate;
