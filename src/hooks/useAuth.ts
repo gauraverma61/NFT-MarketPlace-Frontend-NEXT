@@ -18,7 +18,6 @@ const useAuth = () => {
   const [activatingConnector, setActivatingConnector] = useState<any>();
   const { connector, activate, deactivate, active, account, chainId, library } =
     context;
-  console.log("account", account)
   useEffect(() => {
     if (activatingConnector && activatingConnector === connector) {
       setActivatingConnector(undefined);

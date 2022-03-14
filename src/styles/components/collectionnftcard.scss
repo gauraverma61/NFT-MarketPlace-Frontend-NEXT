@@ -1,0 +1,58 @@
+.collection_nftcard {
+  .card {
+      border-radius: 10px;
+    .image_container {
+      height: 200px;
+      img {
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      .icon_wrapper {
+        height: 50px;
+        width: 50px;
+        padding: 4px;
+        background: white;
+        border-radius: 50%;
+        bottom: 25px;
+        position: relative;
+        margin: 0 auto;
+        overflow: hidden;
+
+        img {
+          border-radius: 50%;
+        }
+      }
+    }
+    .detail_container {
+      .collection_name {
+        color: rgb(4, 17, 29);
+        font-weight: 600;
+        font-size: 18px;
+        text-transform: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align: center;
+        max-width: 200px;
+        margin-top: 2px;
+      }
+      .owner {
+        font-weight: 500;
+        font-size: 14px;
+        color: rgb(112, 122, 131);
+
+        span {
+          color: rgb(32, 129, 226);
+        }
+      }
+      .description {
+        max-width: 80%;
+        font-weight: 400;
+        font-size: 16px;
+        color: rgb(112, 122, 131);
+      }
+    }
+  }
+}

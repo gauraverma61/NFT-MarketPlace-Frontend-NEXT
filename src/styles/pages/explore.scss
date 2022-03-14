@@ -1,0 +1,30 @@
+.explore {
+  .explore_heading {
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0px;
+    color: rgb(4, 17, 29);
+  }
+
+  .explore_tabs {
+    .explore-tab {
+      display: flex !important;
+      align-items: center;
+
+      .tab {
+        padding: 12px 20px;
+        font-weight: 600;
+        font-size: 18px;
+        border-radius: 3px;
+        color: rgb(112, 122, 131) !important;
+        transition: color 0.4s ease 0s, background-color 0.4s ease 0s, border-bottom 0.4s ease 0s;
+        border-bottom: 3px solid transparent !important;
+      }
+      .tab.active {
+        color: black !important;
+        border-bottom: 3px solid #28282b !important;
+      }
+    }
+  }
+}

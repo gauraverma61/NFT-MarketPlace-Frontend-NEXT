@@ -19,6 +19,8 @@ const Header = () => {
 
   const dispatch = useAppDispatch();
   const { isLoggedIn, account, disconnect } = useAuth();
+  console.log(isLoggedIn);
+  
 
   const routerSigninPush = () => {
     router.push("/signin");

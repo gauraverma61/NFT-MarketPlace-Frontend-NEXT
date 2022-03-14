@@ -1,5 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
+import Authenticated from "@components/Authenticated";
 
 const Create: React.FC = () => {
     const router = useRouter();
@@ -11,6 +12,7 @@ const Create: React.FC = () => {
         router.push("/create/multiple")
     }
   return (
+    <Authenticated>
     <div className="create">
       <div className="create_container container p-2 p-md-4 p-lg-5">
         <h2 className="create_heading">Choose Type</h2>
@@ -50,6 +52,7 @@ const Create: React.FC = () => {
         </div>
       </div>
     </div>
+    </Authenticated>
   );
 };
 
