@@ -1,5 +1,4 @@
 .signin{
-    height: 90vh;
     .left{
         background-color: white;
         h2{
@@ -11,7 +10,7 @@
     }
     .right{
         background-color: #28282B;
-        padding: 80px 100px;
+        padding: 100px 100px;
         h2{
             color: white;
             font-weight: 700;
@@ -28,6 +27,9 @@
                 cursor: pointer;
                 color: rgb(0, 102, 255);
             }
+        }
+        @media screen and (max-width:"768px"){
+            padding: 40px 20px;
         }
     }
 

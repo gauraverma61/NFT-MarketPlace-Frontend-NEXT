@@ -84,7 +84,7 @@ const dummydata = [
 ];
 
 const Explore = () => {
-  const [key, setKey] = useState("home");
+  const [key, setKey] = useState("trending");
   return (
     <div className="explore container-fluid">
       <h2 className="explore_heading my-5">Explore Collections</h2>
@@ -92,7 +92,7 @@ const Explore = () => {
       <div className="explore_tabs">
         <Tabs
           id="controlled-tab-example"
-          defaultActiveKey="0"
+          defaultActiveKey="trending"
           activeKey={key}
           onSelect={(k: any) => setKey(k)}
           className="mb-3 explore-tab"

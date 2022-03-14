@@ -44,6 +44,9 @@ const Section1: React.FC = () => {
   const pustToCreateHandler = ()=>{
     router.push("/create");
   }
+  const pustToExploreHandler = ()=>{
+    router.push("/explore");
+  }
 
   return (
     <>
@@ -65,7 +68,7 @@ const Section1: React.FC = () => {
               Sasible is the worlds first and largest NFT marketplace
             </p>
             <div className="button_section d-flex align-items-center mt-5">
-              <Button text="Explore" variant="big_blackborder" />
+              <Button clickHandler={pustToExploreHandler} text="Explore" variant="big_blackborder" />
               <Button clickHandler={pustToCreateHandler} text="Create" variant="big_blackborder" />
             </div>
           </div>

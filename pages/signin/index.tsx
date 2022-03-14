@@ -4,6 +4,7 @@ import MetaMaskIcon from "@assets/icons/metamask.svg";
 import WalletConnectIcon from "@assets/icons/walletconnect.webp";
 import Image from "next/image";
 import useAuth from "../../src/hooks/useAuth"
+import useWidth from "src/hooks/useWidth";
 
 interface walletbuttonIprops {
   text: string;
@@ -23,16 +24,17 @@ const WalletButton = (props: walletbuttonIprops) => {
 };
 
 const SignIn = () => {
+  const width = useWidth();
   const {connect, disconnect, chainId, isLoggedIn, account} = useAuth();
   // console.log("account",account)
   return (
     <div className="signin w-100 container-fluid">
-      <div className="row h-100">
-        <div className="col-12 col-md-4 left h-100 d-flex align-items-center justify-content-center flex-column">
+      <div className="row">
+        { width> 786 && <div className="col-12 col-md-4 left  d-flex align-items-center justify-content-center flex-column">
           <MainIcon size="big" />
           <h2>Sasible</h2>
-        </div>
-        <div className="col-12 col-md-8 right h-100">
+        </div>}
+        <div className="col-12 col-md-8 right ">
           <h2>Sign in</h2>
           <p>
             Choose one of available wallet providers or create a new wallet.{" "}

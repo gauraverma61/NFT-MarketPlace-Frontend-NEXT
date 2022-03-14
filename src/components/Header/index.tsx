@@ -10,6 +10,8 @@ import { useAppDispatch } from "@redux/store";
 import { login, logout } from "@redux/actions";
 import SearchIcon from "@atoms/SearchIcon";
 import CrossIcon from "@atoms/CrossIcon";
+import { useSelector } from "react-redux";
+import { userIsLoggedIn } from "@redux/slices/user/selector";
 
 const Header = () => {
   const router = useRouter();
@@ -18,12 +20,15 @@ const Header = () => {
   const [showBigSearchContainer, setShowBigSearchContainer] = useState(false);
 
   const dispatch = useAppDispatch();
-  const { isLoggedIn, account, disconnect } = useAuth();
-  console.log(isLoggedIn);
-  
+  const { account, disconnect } = useAuth();
+  // console.log(isLoggedIn);
+  const isLoggedIn = useSelector(userIsLoggedIn);
 
   const routerSigninPush = () => {
     router.push("/signin");
+  };
+  const routerCreatePush = () => {
+    router.push("/create");
   };
 
   const logOutHandler = async () => {
@@ -76,7 +81,7 @@ const Header = () => {
         )}
         {width > 1200 && (
           <div className="right_container">
-            <Button text={"Create"} variant={"dark"} />
+            <Button clickHandler={routerCreatePush} text={"Create"} variant={"dark"} />
             {!isLoggedIn ? (
               <Button
                 clickHandler={routerSigninPush}
