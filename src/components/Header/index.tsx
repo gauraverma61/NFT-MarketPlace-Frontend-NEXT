@@ -59,7 +59,7 @@ const Header = () => {
             <Link href="">
               <div className="option">Explore</div>
             </Link>
-            <Link href="">
+            <Link href="/account">
               <div className="option">My profile</div>
             </Link>
             <Link href="">

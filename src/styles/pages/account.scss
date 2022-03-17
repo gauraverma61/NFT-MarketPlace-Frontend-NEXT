@@ -1,0 +1,86 @@
+.account {
+  .intro {
+    .profile_banner {
+      height: 250px;
+      background-color: rgb(229, 232, 235);
+      .banner_label {
+        input {
+          display: none;
+        }
+      }
+    }
+    .detail_section {
+      position: relative;
+      -webkit-box-align: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 200px;
+      margin: 0px auto;
+      top: -65px;
+
+      @media screen and (min-width: "600px") {
+        max-width: 500px;
+      }
+      .profileimage_container {
+        height: 130px;
+        width: 130px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 15px;
+        .profileimage_label {
+          position: relative;
+          input {
+            display: none;
+          }
+          .backdrop {
+            height: 100%;
+            width: 100%;
+            display: none;
+            position: absolute;
+            background-color: rgba($color: #000000, $alpha: 0.2);
+          }
+          i {
+            color: white;
+            font-size: 20px;
+            display: none;
+            margin-left: 7px;
+          }
+          &:hover {
+            i,
+            .backdrop {
+              display: flex;
+            }
+          }
+        }
+      }
+      .user_name {
+        font-size: 30px;
+        font-weight: 600;
+        min-height: 40px;
+      }
+      .address {
+        padding: 4px 8px;
+        border: 1px solid rgb(229, 232, 235);
+        border-radius: 16px;
+
+        .coin_icon {
+          width: 12px;
+          margin: 0 5px;
+        }
+        .wallet_number {
+          color: rgb(112, 122, 131);
+          font-weight: 500;
+          font-size: 16px;
+          margin: 0 5px;
+        }
+      }
+      .joined_date {
+        color: rgb(112, 122, 131);
+        font-weight: 500;
+        font-size: 16px;
+        margin: 10px;
+      }
+    }
+  }
+}

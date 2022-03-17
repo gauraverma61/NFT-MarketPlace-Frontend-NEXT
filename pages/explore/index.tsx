@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import CollectionNFTCard from "@components/CollectionNFTCard";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
+import Authenticated from "@components/Authenticated";
 
 const dummydata = [
   {
@@ -86,7 +87,8 @@ const dummydata = [
 const Explore = () => {
   const [key, setKey] = useState("trending");
   return (
-    <div className="explore container-fluid">
+    <Authenticated>
+    <div className="explore container-xxl">
       <h2 className="explore_heading my-5">Explore Collections</h2>
 
       <div className="explore_tabs">
@@ -137,6 +139,7 @@ const Explore = () => {
         })}
       </div>
     </div>
+    </Authenticated>
   );
 };
 
